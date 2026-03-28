@@ -8,6 +8,9 @@ license=('MIT')
 
 depends=(
   'python'
+  'python-typer'
+  'python-httpx'
+  'python-ollama'
 )
 
 makedepends=(
@@ -18,8 +21,9 @@ makedepends=(
 )
 
 optdepends=(
-'ollama: for AI features'
-'jre-openjdk: required for backend service'
+  'python-questionary: interactive prompts'
+  'ollama: for AI features'
+  'jre-openjdk: backend service'
 )
 
 source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz")
@@ -31,6 +35,6 @@ python -m build --wheel --no-isolation
 }
 
 package() {
-cd "$srcdir/ArchAngel---An-AI-driven-CLI-Assistant-for-arch-based-sytems-$pkgver"
-python -m installer --destdir="$pkgdir" dist/*.whl
+  cd "$srcdir/ArchAngel---An-AI-driven-CLI-Assistant-for-arch-based-sytems-$pkgver"
+  python -m installer --destdir="$pkgdir" dist/*.whl
 }
