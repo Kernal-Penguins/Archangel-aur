@@ -1,0 +1,15 @@
+post_install() {
+echo "ArchAngel CLI installed."
+echo ""
+echo "Run: archangel --help"
+echo ""
+echo "Optional dependencies:"
+echo "  - ollama (AI features)"
+echo "  - jre-openjdk (backend service)"
+echo ""
+echo "If command not found, run: pipx ensurepath"
+}
+
+post_upgrade() {
+post_install
+}
