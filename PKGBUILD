@@ -1,5 +1,5 @@
 pkgname=archangel-cli
-pkgver=0.1.1
+pkgver=0.1.2
 pkgrel=1
 pkgdesc="AI-driven CLI assistant for Arch-based Linux systems"
 arch=('any')

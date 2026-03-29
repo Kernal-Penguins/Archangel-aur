@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "archangel-cli"
+version = "0.1.0"
+description = "AI-driven CLI assistant for Arch-based Linux systems"
+readme = "README.md"
+requires-python = ">=3.9"
+
+authors = [
+{ name = "ArchAngel Team" }
+]
+
+dependencies = [
+"typer[all]",
+"httpx",
+"ollama",
+"questionary"
+]
+
+[project.scripts]
+archangel = "archangel.cli:app"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
