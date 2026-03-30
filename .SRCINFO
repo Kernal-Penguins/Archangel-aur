@@ -1,6 +1,6 @@
 pkgbase = archangel-cli
 	pkgdesc = AI-driven CLI assistant for Arch-based Linux systems
-	pkgver = 0.1.2
+	pkgver = 0.1.3
 	pkgrel = 1
 	url = https://github.com/Kernal-Penguins/ArchAngel---An-AI-driven-CLI-Assistant-for-arch-based-sytems
 	install = archangel-cli.install
@@ -10,7 +10,7 @@ pkgbase = archangel-cli
 	depends = python-pipx
 	optdepends = ollama: AI features
 	optdepends = jre-openjdk: backend service
-	source = archangel-cli-0.1.2.tar.gz::https://github.com/Kernal-Penguins/ArchAngel---An-AI-driven-CLI-Assistant-for-arch-based-sytems/archive/refs/tags/v0.1.2.tar.gz
-	sha256sums = SKIP
+	source = archangel-cli-0.1.3.tar.gz::https://github.com/Kernal-Penguins/ArchAngel---An-AI-driven-CLI-Assistant-for-arch-based-sytems/archive/refs/tags/v0.1.3.tar.gz
+	sha256sums = a4ff3a5b823e83ffd4d341dc72634102e0a9235ff5b88004dc63f6dc981e607c
 
 pkgname = archangel-cli

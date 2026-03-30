@@ -19,7 +19,7 @@ optdepends=(
 )
 
 source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz")
-sha256sums=('SKIP')
+sha256sums=('a4ff3a5b823e83ffd4d341dc72634102e0a9235ff5b88004dc63f6dc981e607c')
 
 package() {
 cd "$srcdir/ArchAngel---An-AI-driven-CLI-Assistant-for-arch-based-sytems-$pkgver"
