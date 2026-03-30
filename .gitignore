@@ -2,3 +2,4 @@ pkg/
 venv/
 .gitignore
 /src
+.tar.gz
